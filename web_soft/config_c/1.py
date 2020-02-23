@@ -1,4 +1,5 @@
 import  configparser
+
 config=configparser.ConfigParser()
 config.read('config.ini',encoding='GB18030')
 print(config.sections())
