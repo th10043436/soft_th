@@ -35,8 +35,6 @@ class Class_Xlrd(object):
             list.append(dict)
         return list
 
-
-
 if __name__ == '__main__':
         #获取当前路径
         curr=os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
