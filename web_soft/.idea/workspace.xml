@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f6f65b6f-4efa-4fd6-95a3-cfc992714aff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/email_e.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/email_e.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_c/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_c/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_c/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config_c/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/email_e.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_c/ceshi.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config_c/ceshi.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +41,8 @@
       <recent name="D:\soft\github\web_soft\config_c" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.email_e (1)">
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.config_cc (1)">
+    <configuration name="config_cc (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="web_soft" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/config_c" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config_c/1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/config_cc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.config_cc (1)" />
         <item itemvalue="Python.email_e (1)" />
+        <item itemvalue="Python.xlrd_x" />
         <item itemvalue="Python.config_cc" />
         <item itemvalue="Python.email_e" />
-        <item itemvalue="Python.1" />
-        <item itemvalue="Python.xlrd_x" />
       </list>
     </recent_temporary>
   </component>
@@ -192,38 +191,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582446115511" />
-    <state width="1259" height="182" key="GridCell.Tab.0.bottom" timestamp="1582458669731">
+    <state width="1244" height="185" key="GridCell.Tab.0.bottom" timestamp="1582903358554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="182" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582458669731" />
-    <state width="1259" height="182" key="GridCell.Tab.0.center" timestamp="1582458669730">
+    <state width="1244" height="185" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
+    <state width="1244" height="185" key="GridCell.Tab.0.center" timestamp="1582903358554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="182" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582458669730" />
-    <state width="1259" height="182" key="GridCell.Tab.0.left" timestamp="1582458669730">
+    <state width="1244" height="185" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
+    <state width="1244" height="185" key="GridCell.Tab.0.left" timestamp="1582903358554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="182" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582458669730" />
-    <state width="1259" height="182" key="GridCell.Tab.0.right" timestamp="1582458669731">
+    <state width="1244" height="185" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
+    <state width="1244" height="185" key="GridCell.Tab.0.right" timestamp="1582903358554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="182" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582458669731" />
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1582453934109">
+    <state width="1244" height="185" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1582903194952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582453934109" />
-    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1582453934109">
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582903194952" />
+    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1582903194952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582453934109" />
-    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1582453934108">
+    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582903194952" />
+    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1582903194952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582453934108" />
-    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1582453934109">
+    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582903194952" />
+    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1582903194952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582453934109" />
+    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582903194952" />
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1582453967424">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
