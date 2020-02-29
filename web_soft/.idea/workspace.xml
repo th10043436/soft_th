@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f6f65b6f-4efa-4fd6-95a3-cfc992714aff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/email_e.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_c/ceshi.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config_c/ceshi.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/config_cc.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/config_ccc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/xlrd_x.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/xlrd_x.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_c/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config_c/config.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +36,77 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config_c" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tanghuan-master (1)/tanghuan-master/zuixin" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\soft\github\web_soft\config_c" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.config_cc (1)">
+  <component name="RunManager" selected="Python.base">
+    <configuration name="Email (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web_soft" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/Email.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Email" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web_soft" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/Email.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web_soft" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/base.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="config_cc (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="web_soft" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,27 +120,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/config_cc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="config_cc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="web_soft" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\soft\github\web_soft\base\config_cc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,55 +149,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="email_e" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="web_soft" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\soft\github\web_soft\base\email_e.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="xlrd_x" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="web_soft" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/xlrd_x.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base" />
+        <item itemvalue="Python.Email (1)" />
+        <item itemvalue="Python.Email" />
         <item itemvalue="Python.config_cc (1)" />
         <item itemvalue="Python.email_e (1)" />
-        <item itemvalue="Python.xlrd_x" />
-        <item itemvalue="Python.config_cc" />
-        <item itemvalue="Python.email_e" />
       </list>
     </recent_temporary>
   </component>
@@ -191,22 +193,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582446115511" />
-    <state width="1244" height="185" key="GridCell.Tab.0.bottom" timestamp="1582903358554">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1582963295148">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1244" height="185" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
-    <state width="1244" height="185" key="GridCell.Tab.0.center" timestamp="1582903358554">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582963295148" />
+    <state width="1244" height="246" key="GridCell.Tab.0.bottom" timestamp="1582965842369">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1244" height="185" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
-    <state width="1244" height="185" key="GridCell.Tab.0.left" timestamp="1582903358554">
+    <state width="1244" height="246" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582965842369" />
+    <state width="1244" height="246" key="GridCell.Tab.0.center" timestamp="1582965842369">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1244" height="185" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
-    <state width="1244" height="185" key="GridCell.Tab.0.right" timestamp="1582903358554">
+    <state width="1244" height="246" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582965842369" />
+    <state width="1244" height="246" key="GridCell.Tab.0.left" timestamp="1582965842368">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1244" height="185" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582903358554" />
+    <state width="1244" height="246" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582965842368" />
+    <state width="1244" height="246" key="GridCell.Tab.0.right" timestamp="1582965842369">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1244" height="246" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582965842369" />
     <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1582903194952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -227,9 +233,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1582453967424" />
-    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582445459814">
+    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582965441756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582445459814" />
+    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582965441756" />
   </component>
 </project>
