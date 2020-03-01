@@ -1,10 +1,19 @@
 # coding:utf-8
 import time
-from  common import  config_ccc
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+print(curPath)
+rootPath = os.path.split(curPath)[0]
+print(rootPath)
+sys.path.append(rootPath)
+
+from  common.config_ccc import Conig_c
 #发送字符串的邮件
 from email.mime.text import MIMEText
 import  smtplib
 from email.header import  Header
+
 
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 
@@ -62,7 +71,7 @@ class email_e(object):
 
 if __name__ == '__main__':
     path='../config_c/config.ini'
-    con=config_ccc.Conig_c(path)
+    con=Conig_c(path)
     list=con.key_value('config_emalil')
     #print(list)
     e=email_e(list[0][1],list[1][1],list[3][1],list[2][1])
