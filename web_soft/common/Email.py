@@ -2,6 +2,14 @@
 import time
 import sys
 import os
+import  logging
+import logging.config
+
+#日志设置
+con_log='../tail_log/log.conf'
+logging.config.fileConfig(con_log)
+logging=logging.getLogger()
+
 curPath = os.path.abspath(os.path.dirname(__file__))
 print(curPath)
 rootPath = os.path.split(curPath)[0]
@@ -18,7 +26,7 @@ from email.header import  Header
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 
 class email_e(object):
-    def __init__(self,fromadder='1054571495@qq.com',password='amrkcrvmplqrbcfc',post='465',stmp_server='smtp.qq.com'):
+    def __init__(self,fromadder,password,post,stmp_server):
         self.fromadder=fromadder
         self.password=password
         self.toaddrs=['1054571495@qq.com']
@@ -44,10 +52,10 @@ class email_e(object):
             print('发送失败%s'%a)
 
     #发送各种带附件的邮件
-    def massage_ee(self):
+    def massage_ee(self,path=r'C:\Users\tanghuan\Desktop\33.html'):
         mail_title='等入自动化测试报告'
         # 读取文件内容
-        f = open(r'C:\Users\tanghuan\Desktop\33.html', 'rb')
+        f = open(path, 'rb')
         mail_boedy=f.read()
         f.close()
         # 邮件内容，编码，格式
@@ -64,10 +72,10 @@ class email_e(object):
             smtpObj.connect(self.stmp_server)
             smtpObj.login(self.fromadder, self.password)
             smtpObj.sendmail(self.fromadder, self.toaddrs, message.as_string())
-            print('邮件发送成功')
+            logging.info('发送成功')
 
-        except smtplib.SMTPException:
-            print('邮件发送失败')
+        except smtplib.SMTPException as fail:
+            logging.info('发送失败：%s'%fail)
 
 if __name__ == '__main__':
     path='../config_c/config.ini'
@@ -75,7 +83,7 @@ if __name__ == '__main__':
     list=con.key_value('config_emalil')
     #print(list)
     e=email_e(list[0][1],list[1][1],list[3][1],list[2][1])
-    e.massage_ee()
+    e.massage_ee(r'C:\Users\tanghuan\Desktop\33.html')
 
 
 
