@@ -20,6 +20,7 @@ class object_class(Base):
         ele_p.send_keys(password)
         ele_b=self.WebDriver_01(locat_03)
         ele_b.click()
+        print('---------------------------')
 
 
 if __name__ == '__main__':
