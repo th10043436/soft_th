@@ -38,7 +38,6 @@ class Base(object):
 
 
 
-
 if __name__ == '__main__':
     driver=webdriver.Chrome()
     driver.get('https://www.baidu.com/')

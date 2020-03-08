@@ -4,16 +4,20 @@ import sys
 import os
 import  logging
 import logging.config
+import os
+pa=os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+path_t=os.path.join(pa,'tail_log','log.conf')
+print(path_t)
 
 #日志设置
-con_log='../tail_log/log.conf'
-logging.config.fileConfig(con_log)
+con_log='../taiL_log/log.conf'
+logging.config.fileConfig(path_t)
 logging=logging.getLogger()
 
 curPath = os.path.abspath(os.path.dirname(__file__))
-print(curPath)
+
 rootPath = os.path.split(curPath)[0]
-print(rootPath)
+
 sys.path.append(rootPath)
 
 from  common.config_ccc import Conig_c
