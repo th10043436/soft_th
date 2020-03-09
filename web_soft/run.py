@@ -1,3 +1,4 @@
+# -*- coding:utf-8  -*-
 import  os
 from Html import  html_config
 import  logging
@@ -36,7 +37,7 @@ def case_report():
 
 
 def send_email():
-    #发送报告给游戏
+    #发送报告给邮箱
     re=os.listdir('./Html')
     li=re[-5]
     print(li)
@@ -45,10 +46,12 @@ def send_email():
     return path
 
 if __name__ == '__main__':
+
+    path_i = os.getcwd() #获取当前文件位置
+    print("path_i :%s"%path_i)
     case_report()
     pa=send_email()
-    # ‘./’代表同级 ‘../’代表上级
-    path = './config_c/config.ini'
+    path = './config_c/config.ini'  # ‘./’代表同级 ‘../’代表上级
     con = Conig_c(path)
     list = con.key_value('config_emalil')
     print(list)
