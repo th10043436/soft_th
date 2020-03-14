@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f6f65b6f-4efa-4fd6-95a3-cfc992714aff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_c/ceshi.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config_c/ceshi.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taiL_log/log.conf" beforeDir="false" afterPath="$PROJECT_DIR$/taiL_log/log.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taiL_log/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/taiL_log/run.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tanghuan-master (1)/tanghuan-master/zuixin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -48,8 +45,8 @@
       <recent name="D:\soft\github\web_soft\taiL_log" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="logview" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.base">
+    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="web_soft" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,11 +54,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/logView" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logView/logview.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/base.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="base2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web_soft" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/base2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,20 +123,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_01.TEST.test_01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="web_soft" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_01.TEST.test_01&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in test_01.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_soft" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base" />
+        <item itemvalue="Python.base2" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python tests.Unittests for test_01.TEST" />
         <item itemvalue="Python tests.Unittests in test_01.py" />
-        <item itemvalue="Python tests.Unittests for test_01.TEST.test_01" />
-        <item itemvalue="Python.logview" />
       </list>
     </recent_temporary>
   </component>
@@ -161,42 +165,50 @@
       <option name="project" value="LOCAL" />
       <updated>1582446116500</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="数据驱动">
+      <created>1583760003073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583760003073</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加发送邮件" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加发送邮件" />
+    <MESSAGE value="数据驱动" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据驱动" />
   </component>
   <component name="WindowStateProjectService">
     <state x="385" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582442208361">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1582442208361" />
-    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1582446115511">
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1583760002141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582446115511" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1583644839448">
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1583760002141" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1584177362812">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583644839448" />
-    <state width="1259" height="170" key="GridCell.Tab.0.bottom" timestamp="1583759793415">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584177362812" />
+    <state width="1259" height="137" key="GridCell.Tab.0.bottom" timestamp="1584181392201">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583759793415" />
-    <state width="1259" height="170" key="GridCell.Tab.0.center" timestamp="1583759793415">
+    <state width="1259" height="137" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584181392201" />
+    <state width="1259" height="137" key="GridCell.Tab.0.center" timestamp="1584181392201">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583759793415" />
-    <state width="1259" height="170" key="GridCell.Tab.0.left" timestamp="1583759793415">
+    <state width="1259" height="137" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584181392201" />
+    <state width="1259" height="137" key="GridCell.Tab.0.left" timestamp="1584181392201">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583759793415" />
-    <state width="1259" height="170" key="GridCell.Tab.0.right" timestamp="1583759793415">
+    <state width="1259" height="137" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584181392201" />
+    <state width="1259" height="137" key="GridCell.Tab.0.right" timestamp="1584181392201">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583759793415" />
+    <state width="1259" height="137" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584181392201" />
     <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1583327338403">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -217,9 +229,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583669162866" />
-    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1583759486959">
+    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1584181031677">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1583759486959" />
+    <state x="432" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584181031677" />
   </component>
 </project>

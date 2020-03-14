@@ -29,3 +29,6 @@
 2020- 9-09 21:15:23 Email.py[line:79] INFO 发送成功
 2020- 9-09 21:16:53 run.py[line:36] INFO 测试报告已经生成
 2020- 9-09 21:16:56 Email.py[line:79] INFO 发送成功
+2020- 9-09 21:22:02 connectionpool.py[line:745] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))': /session/33d3db96d6430da84cf055d374a141a6/cookie
+2020-14-14 16:06:01 run.py[line:36] INFO 测试报告已经生成
+2020-14-14 16:06:06 Email.py[line:79] INFO 发送成功
