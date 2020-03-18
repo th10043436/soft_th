@@ -33,6 +33,7 @@ class TEST(unittest.TestCase):
     def tearDown(self):
         time.sleep(6)
         self.driver.delete_all_cookies()
+        self.driver.close()
 
 
 if __name__ == '__main__':

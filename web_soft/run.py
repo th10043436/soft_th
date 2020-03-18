@@ -45,6 +45,10 @@ def send_email():
     print("报告路径： %s"%path)
     return path
 
+
+
+
+
 if __name__ == '__main__':
 
     path_i = os.getcwd() #获取当前文件位置

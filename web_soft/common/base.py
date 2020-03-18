@@ -3,14 +3,17 @@ import time
 from  selenium import  webdriver
 from  selenium.webdriver.support.wait import  WebDriverWait
 from  selenium.webdriver.common.by import By
-from  selenium.webdriver.common.action_chains import  ActionChains
+from selenium.webdriver.common.action_chains import ActionChains
 from  selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as  Ec
 from  selenium.common.exceptions import  *
+import  multiprocessing
+
 
 class Base(object):
     def __init__(self,driver:webdriver.Chrome):
         self.driver=driver
+
     #显性等待
     def WebDriver_01(self,locator,timeout=4,t=0.6):
         if not isinstance(locator,tuple):
@@ -84,8 +87,8 @@ class Base(object):
         ele.click()
 
     #js,滚动条回到底部：
-    def js_top(self):
-        js = "window.scrollTo(0,document.body.scrollHeight)"
+    def js_top(self,num):
+        js = "window.scrollTo(%s,document.body.scrollHeight)"%num
         self.driver.execute_script(js)
     #滚动到顶部
     def js_t(self):
@@ -97,16 +100,39 @@ class Base(object):
         target =self.WebDriver_01(locat)
         self.driver.execute_script("arguments[0].scrollIntoView();", target)
 
+    #鼠标悬停事件
+    def Actions(self,*locat):
+        ele=self.WebDriver_01(*locat)
+        print(ele)
+        ActionChains(self.driver).move_to_element(ele).perform()
+
+    #select 下拉框,
+    def Select(self,locat,index,value,text):
+        ele=self.WebDriver_01(locat)
+        Select(ele).select_by_index(index)  #下标选择
+        time.sleep(3)
+
+        Select(ele).select_by_value(value)  #数值选择
+        time.sleep(3)
+
+        Select(ele).select_by_visible_text(text)  #文本选择
+        time.sleep(3)
+
+
 
 if __name__ == '__main__':
+
     driver=webdriver.Chrome()
+    driver.maximize_window()
     driver.get('https://www.baidu.com/')
     B=Base(driver)
-    print(B.iselementExist((By.ID,'kw')))
+    B.Actions((By.LINK_TEXT,'设置'))
+    B.Click((By.LINK_TEXT,'搜索设置'))
+    B.Select((By.ID,'nr'),'1','20','每页显示50条')
     driver.close()
 
     #B.js_target((By.XPATH,'//*[@id="TopDiggPostsBlock"]/ul/li[10]/a'))
-    # B.js_top()
+    # B.js_top(30)
     # time.sleep(3)
     # B.js_t()
 
