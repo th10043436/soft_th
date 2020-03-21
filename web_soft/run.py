@@ -61,6 +61,3 @@ if __name__ == '__main__':
     print(list)
     e = email_e(list[0][1], list[1][1], list[3][1], list[2][1])
     e.massage_ee(pa)
-
-
-
