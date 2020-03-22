@@ -57,7 +57,7 @@ class email_e(object):
 
     #发送各种带附件的邮件
     def massage_ee(self,path=r'C:\Users\tanghuan\Desktop\33.html'):
-        mail_title='等入自动化测试报告'
+        mail_title='登入自动化测试报告'
         # 读取文件内容
         f = open(path, 'rb')
         mail_boedy=f.read()

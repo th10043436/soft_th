@@ -38,15 +38,12 @@ def case_report():
 
 def send_email():
     #发送报告给邮箱
-    re=os.listdir('./Html')
-    li=re[-5]
-    print(li)
+    re=os.listdir(r'D:\soft\github\web_soft\Html')
+    li=re[-4]
+    print('li: %s'%li)
     path=os.path.join(path_t,'Html',li)
     print("报告路径： %s"%path)
     return path
-
-
-
 
 
 if __name__ == '__main__':
@@ -55,9 +52,9 @@ if __name__ == '__main__':
     print("path_i :%s"%path_i)
     case_report()
     pa=send_email()
-    path = './config_c/config.ini'  # ‘./’代表同级 ‘../’代表上级
+
+    path = r'D:\soft\github\web_soft\config_c\config.ini'  # ‘./’代表同级 ‘../’代表上级
     con = Conig_c(path)
     list = con.key_value('config_emalil')
-    print(list)
     e = email_e(list[0][1], list[1][1], list[3][1], list[2][1])
     e.massage_ee(pa)

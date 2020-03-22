@@ -362,9 +362,9 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>qq邮箱登入功能</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-03-21 15:18:06</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:50.352816</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-03-21 16:09:37</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:35.345502</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj errorCase">Error</span>2</p>
 
 <p class='description'>测试登入</p>
 </div>
@@ -397,44 +397,74 @@ function hide_img(obj){
     <th>错误截图</th>
 </tr>
 
-<tr class='passClass'>
+<tr class='errorClass'>
     <td>test_01.TEST</td>
-    <td>1</td>
-    <td>1</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1',2)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
+<tr id='ft1.1' class='none'>
     <td ><div class='testcase'>test_01: qq登入功能</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status passCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        通过</a></span>
+    <span class='status errorCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        错误</a></span>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 总行数 2
-总列数 2
-0
-['1054571495@qq.com', '15021675587']
-[{'name': '1054571495@qq.com', 'password': '15021675587'}]
-正在定位元素，定位方式key值: id ,value值:u
-&lt;selenium.webdriver.remote.webelement.WebElement (session="99b09c0840052523387f9e5c833c9654", element="c8286a07-f8dd-4b05-8313-63eb70bdd9a2")&gt;
-正在定位元素，定位方式key值: id ,value值:p
-正在定位元素，定位方式key值: id ,value值:login_button
----------------------------
-正在定位元素，定位方式key值: class name ,value值:toptitle
-具体元素 ：&lt;selenium.webdriver.remote.webelement.WebElement (session="99b09c0840052523387f9e5c833c9654", element="0c894c3b-d8a7-43b4-98bd-c051387e1f21")&gt;
+ft1.1: Traceback (most recent call last):
+  File "D:\soft\github\web_soft\case\test_01.py", line 20, in test_01
+    xlrd=Class_Xlrd('./config_c/ceshi.xlsx')#解析excel 表格，里面存的是qq账号
+  File "D:\soft\github\web_soft\common\xlrd_x.py", line 8, in __init__
+    self.data=xlrd.open_workbook(path)
+  File "D:\python\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './config_c/ceshi.xlsx'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td ><div class='testcase'>test_01: qq登入功能_retry:1</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status errorCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        错误</a></span>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "D:\soft\github\web_soft\case\test_01.py", line 20, in test_01
+    xlrd=Class_Xlrd('./config_c/ceshi.xlsx')#解析excel 表格，里面存的是qq账号
+  File "D:\soft\github\web_soft\common\xlrd_x.py", line 8, in __init__
+    self.data=xlrd.open_workbook(path)
+  File "D:\python\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './config_c/ceshi.xlsx'
 
 
         </pre>
@@ -447,17 +477,17 @@ pt1.1: 总行数 2
 
 <tr id='total_row'>
     <th>统计</th>
-    <th>1</th>
-    <th>1</th>
+    <th>2</th>
     <th>0</th>
     <th>0</th>
+    <th>2</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
 </tr>
 </table>
 <script>
     showCase(1);
-    drawCircle(1, 0, 0);
+    drawCircle(0, 0, 2);
 </script>
 
 <div id='ending'>&nbsp;</div>

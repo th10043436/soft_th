@@ -1,12 +1,13 @@
 import  unittest
 from  selenium import  webdriver
-import  time
+import  time,os
 from  logView.logview import object_class
 from  selenium.webdriver.common.by import  By
 from  common.xlrd_x import Class_Xlrd
 
 locat_01=(By.CLASS_NAME,'toptitle')
 #dict={'accout':'1054571495@qq.com','password':'15021675587'}
+path = os.path.dirname(os.path.dirname(__file__))
 
 class TEST(unittest.TestCase):
 
@@ -14,10 +15,15 @@ class TEST(unittest.TestCase):
         self.driver=webdriver.Chrome()
         self.driver.get('https://mail.qq.com/')
 
+
     def  test_01(self):
         '''qq登入功能'''
         #'./在runn文件运行' '../在本文件运行'
-        xlrd=Class_Xlrd('./config_c/ceshi.xlsx')#解析excel 表格，里面存的是qq账号
+        self.path = os.getcwd()
+        print(self.path)
+        print("---------------------------")
+        #xlrd=Class_Xlrd('D:/soft/github/web_soft/config_c/ceshi.xlsx')#解析excel 表格，里面存的是qq账号
+        xlrd = Class_Xlrd(path + '/config_c/ceshi.xlsx')
         #print(xlrd)
         list=xlrd.dict_data()
         print(list)

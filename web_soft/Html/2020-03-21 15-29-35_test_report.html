@@ -362,9 +362,9 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>qq邮箱登入功能</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-03-21 15:18:06</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:50.352816</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-03-21 15:29:35</p>
+<p class='attribute'><strong>耗时:</strong> 0:01:39.076381</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1 <span class="tj failCase">Failure</span>1</p>
 
 <p class='description'>测试登入</p>
 </div>
@@ -397,44 +397,86 @@ function hide_img(obj){
     <th>错误截图</th>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>test_01.TEST</td>
+    <td>2</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
+    <td><a href="javascript:showClassDetail('c1',2)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
+<tr id='ft1.1' class='none'>
     <td ><div class='testcase'>test_01: qq登入功能</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status passCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        通过</a></span>
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        失败</a></span>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 总行数 2
+ft1.1: 总行数 2
 总列数 2
 0
 ['1054571495@qq.com', '15021675587']
 [{'name': '1054571495@qq.com', 'password': '15021675587'}]
 正在定位元素，定位方式key值: id ,value值:u
-&lt;selenium.webdriver.remote.webelement.WebElement (session="99b09c0840052523387f9e5c833c9654", element="c8286a07-f8dd-4b05-8313-63eb70bdd9a2")&gt;
+&lt;selenium.webdriver.remote.webelement.WebElement (session="adf90b7cbf467ddfb59bf5bc8cec35b5", element="0249cf1a-dd14-42e3-96a1-71bb4ccdc88b")&gt;
 正在定位元素，定位方式key值: id ,value值:p
 正在定位元素，定位方式key值: id ,value值:login_button
 ---------------------------
 正在定位元素，定位方式key值: class name ,value值:toptitle
-具体元素 ：&lt;selenium.webdriver.remote.webelement.WebElement (session="99b09c0840052523387f9e5c833c9654", element="0c894c3b-d8a7-43b4-98bd-c051387e1f21")&gt;
+具体元素 ：[]
+Traceback (most recent call last):
+  File "D:\soft\github\web_soft\case\test_01.py", line 30, in test_01
+    self.assertTrue(ele)
+AssertionError: [] is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_01: qq登入功能_retry:1</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a></span>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: 总行数 2
+总列数 2
+0
+['1054571495@qq.com', '15021675587']
+[{'name': '1054571495@qq.com', 'password': '15021675587'}]
+正在定位元素，定位方式key值: id ,value值:u
+&lt;selenium.webdriver.remote.webelement.WebElement (session="51e5c9230a59d05053af3b610540bd74", element="f0b93697-0151-4753-b4cf-7c8794d60d4a")&gt;
+正在定位元素，定位方式key值: id ,value值:p
+正在定位元素，定位方式key值: id ,value值:login_button
+---------------------------
+正在定位元素，定位方式key值: class name ,value值:toptitle
+具体元素 ：&lt;selenium.webdriver.remote.webelement.WebElement (session="51e5c9230a59d05053af3b610540bd74", element="55548a63-ed12-4638-a2b9-43c8c417aff8")&gt;
 
 
         </pre>
@@ -447,9 +489,9 @@ pt1.1: 总行数 2
 
 <tr id='total_row'>
     <th>统计</th>
+    <th>2</th>
     <th>1</th>
     <th>1</th>
-    <th>0</th>
     <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
@@ -457,7 +499,7 @@ pt1.1: 总行数 2
 </table>
 <script>
     showCase(1);
-    drawCircle(1, 0, 0);
+    drawCircle(1, 1, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>
