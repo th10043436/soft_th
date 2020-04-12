@@ -16,6 +16,7 @@ class Base(object):
 
     #显性等待
     def WebDriver_01(self,locator,timeout=4,t=0.6):
+
         if not isinstance(locator,tuple):
             print('locator 元素类型错误，必须是元组类型：loc=("id","value")')
 

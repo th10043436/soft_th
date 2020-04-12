@@ -7,6 +7,8 @@ locat_01=(By.ID,'u')
 locat_02=(By.ID,'p')
 locat_03=(By.ID,'login_button')
 
+
+
 class object_class(Base):
 
     #登入方法

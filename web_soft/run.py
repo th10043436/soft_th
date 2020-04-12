@@ -7,12 +7,16 @@ import  unittest
 import  time
 from  common.Email import email_e
 from  common.config_ccc import Conig_c
+
+pat='D:\\soft\\github\\web_soft\\'
+import  sys
+sys.path.append(pat)
 # 日志文件目录
 path_t = os.path.dirname(os.path.realpath(__file__))
 # 文件路径拼接，不能添加'/'
 path_log = os.path.join(path_t, 'tail_log', 'log.conf')
-#print(path_log)
-
+print('-----------------'+path_t)
+print('===============' + os.path.realpath(__file__))
 logging.config.fileConfig(path_log)
 logging = logging.getLogger()
 def case_report():
@@ -47,6 +51,8 @@ def send_email():
 
 
 if __name__ == '__main__':
+    path11=os.path.dirname(__file__)
+    print(path11)
 
     path_i = os.getcwd() #获取当前文件位置
     print("path_i :%s"%path_i)
